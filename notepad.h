@@ -15,8 +15,14 @@ public:
     explicit Notepad(QWidget *parent = 0);
     ~Notepad();
 
+private slots:
+    void on_actionOpen_triggered();
+
+    void on_actionNew_triggered();
+
 private:
     Ui::Notepad *ui;
+    QString current_file;
 };
 
 #endif // NOTEPAD_H
